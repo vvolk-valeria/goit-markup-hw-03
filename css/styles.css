@@ -9,6 +9,7 @@
 .list {
     list-style: none;
     text-decoration: none;
+    margin: 0;
 }
 
 body {
@@ -17,12 +18,23 @@ body {
     letter-spacing: 0.03em;
     color: var(--text-color)
 }
-
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* outline: 1px solid blue; */
+}
+p {
+    margin: 0;
+}
 
 /* ***************** Шапка ******************** */
 
 .page-header {
     background-color: var(--white-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--accent-color);
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -62,9 +74,6 @@ body {
     color: var(--accent-color);
 }
 
-.page {
-color: var(--accent-color);
-}
 
 
 /* ***************** Футер ******************** */
@@ -99,7 +108,10 @@ background: #2F303A;
 
 /* *************************** позже уберу, чтобы было видно h1 ****************************** */
 .hero {
-    background-color: #2F303A; }
+    padding: 200px;
+    background-color: #2F303A; 
+
+}
 /* *************************** позже уберу, чтобы было видно h1 ***************************** */
 
 
@@ -109,7 +121,10 @@ background: #2F303A;
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-color)
+    color: var(--white-color);
+    margin-top: 0;
+    margin-bottom: 30px;
+    
 }
 
 .btn {
@@ -121,6 +136,8 @@ background: #2F303A;
     letter-spacing: 0.06em;
     color: var(--white-color);
     background-color: var(--accent-color);
+    padding: 10px 32px;
+    border-radius: 4px;
 }
 
 .title,
@@ -129,14 +146,31 @@ background: #2F303A;
     font-size: 36px;
     line-height: 1.2;
     color: var(--titlt-color);
+    margin: 0;
+}
+
+.title {
+    margin-bottom: 50px;
+}   
+.feature-title {
+    margin-bottom: 10px;
 }
 
 /* ************************* Так можно или как-то по другому скрывают? *************************** */
-.features > .title, 
+.features .title, 
 .portfolio-title {
     opacity: 0;
+    margin: 0;
+   
 }
 /* ******************************************** ? *********************************************** */
+
+.features {
+margin: 0;
+padding-top: 94px;
+padding-bottom: 94px;
+outline: 1px solid blue;
+}
 
 .feature .feature-title {
     font-size: 14px;
@@ -148,12 +182,28 @@ background: #2F303A;
     font-size: 14px;
     line-height: 1.7;
 }
+.services {
+    padding-bottom: 94px;
+    outline: 1px solid blue;
+}
+
+.employees {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 1px solid blue;
+}
+
+.employees-list img {
+margin-bottom: 30px;
+}
 
 .employee-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     color: var(--titlt-color);
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .employee-vacancy {
@@ -184,7 +234,8 @@ color: var(--titlt-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--titlt-color)
+    color: var(--titlt-color);
+    margin: 0;
 }
 
 .work-view {
