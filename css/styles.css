@@ -32,29 +32,62 @@ p {
 
 .page-header {
     background-color: var(--white-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     color: var(--accent-color);
+    
 }
+
+.flex {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 .logo {
+    display: inline-block;
+    padding: 20px 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    
 }
 
 .logo-dark {
     color: var(--logo-dark-color);
 }
+.nav-header {
+    display: flex;
+}
+.nav-header > .logo {
+    margin-right: 93px;
+}
+.navigation {
+    display: flex;
 
+}
+
+.flex > .contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
 .nav-link {
+
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500; 
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--titlt-color);
+   
 }
 
 .nav-link:hover,
@@ -68,13 +101,20 @@ p {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: inherit;
+    
 }
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
 }
 
-
+.page-header .contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.page-header .contact-item:not(:last-child) {
+    margin-right: 50px;
+}
 
 /* ***************** Футер ******************** */
 
@@ -82,14 +122,19 @@ p {
     color: var(--white-color);
 }
 
+
 .address-text {
+    display: inline-block;
+    padding-bottom: 9px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     color: var(--white-color);
+
 }
 
 .address > .contacts {
+    
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -98,21 +143,32 @@ p {
     color: rgba(255, 255, 255, 0.6);
 }
 
-footer {
-background: #2F303A;
+.address .contact-item:not(:last-child) {
+    padding-bottom: 9px;
 }
+.address-text:hover,
+.address-text:focus {
+    color: var(--accent-color);
+}
+.footer {
+background: #2F303A;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+.footer .logo {
+    display: inline-block;
 
+}
 
 /* ***************** WebStudio ******************** */
 
 
-/* *************************** позже уберу, чтобы было видно h1 ****************************** */
+
 .hero {
     padding: 200px;
     background-color: #2F303A; 
-
+text-align: center;
 }
-/* *************************** позже уберу, чтобы было видно h1 ***************************** */
 
 
 .hero-title {
@@ -151,6 +207,7 @@ background: #2F303A;
 
 .title {
     margin-bottom: 50px;
+    text-align: center;
 }   
 .feature-title {
     margin-bottom: 10px;
@@ -166,9 +223,11 @@ background: #2F303A;
 /* ******************************************** ? *********************************************** */
 
 .features {
+
 margin: 0;
 padding-top: 94px;
 padding-bottom: 94px;
+background-color: #E5E5E5;
 outline: 1px solid blue;
 }
 
@@ -176,6 +235,12 @@ outline: 1px solid blue;
     font-size: 14px;
     line-height: 1.1;
     text-transform: uppercase;
+}
+.features-list {
+    display: flex;
+}
+.feature:not(:last-child) {
+    margin-right: 30px;
 }
 
 .feature-text {
@@ -185,18 +250,38 @@ outline: 1px solid blue;
 .services {
     padding-bottom: 94px;
     outline: 1px solid blue;
+    background-color: #E5E5E5;
+}
+.services-list {
+    display: flex;
+}
+.service-item:not(:last-child) {
+ margin-right: 30px;   
 }
 
 .employees {
     padding-top: 94px;
     padding-bottom: 94px;
     outline: 1px solid blue;
+    background-color: #F5F4FA;
 }
-
-.employees-list img {
+.employees-list {
+    display: flex;
+    text-align: center;
+}
+.employee-item {
+width: 270px;
+height: 368px;
+/* outline: 1px solid red; */
+background-color: var(--white-color);
+}
+.employee-item:not(:last-child) {
+    margin-right: 30px;
+}
+.employee-item img {
+   
 margin-bottom: 30px;
 }
-
 .employee-name {
     font-weight: 500;
     font-size: 16px;
@@ -209,6 +294,7 @@ margin-bottom: 30px;
 .employee-vacancy {
     font-size: 16px;
     line-height: 1.2;
+    padding-bottom: 30px;
 }
 
 
