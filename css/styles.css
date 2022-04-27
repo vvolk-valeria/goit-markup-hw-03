@@ -140,6 +140,7 @@ p {
 }
 
 .address>.contacts {
+    padding-left: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -236,7 +237,7 @@ p {
     margin: 0;
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #E5E5E5;
+    background-color: var(--white-color);
     /* outline: 1px solid blue; */
 }
 
@@ -262,7 +263,7 @@ p {
 .services {
     padding-bottom: 94px;
     /* outline: 1px solid blue; */
-    background-color: #E5E5E5;
+    background-color: var(--white-color);
 }
 
 .services-list {
