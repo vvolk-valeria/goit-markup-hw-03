@@ -227,7 +227,8 @@ p {
 /* ************************* Так можно или как-то по другому скрывают? *************************** */
 .features .title,
 .portfolio-title {
-    opacity: 0;
+    /* opacity: 0; */
+    visibility: hidden;
     margin: 0;
 }
 
